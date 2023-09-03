@@ -70,3 +70,12 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'sassc'
+# Để load file .scss, chuyển application.css thành application.css.scss
+
+gem "font-awesome-sass", "~> 6.4.2"
+# https://fontawesome.com/docs/web/use-with/ruby-on-rails
+
+gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
+# Tích hợp normalize.css vào
