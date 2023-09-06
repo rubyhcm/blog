@@ -1,0 +1,31 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 homepage_content">
+    <h2>About</h2>
+    <hr>
+    <p>
+      My career goal is to become a professional backend developer with Ruby on Rails.
+      My future goal is to become a DevOps expert, with the ability to manage and deploy software systems that meet
+      customer needs.
+      I will continue to learn and develop my skills in information technology, network systems, security, and project
+      management to achieve my goal.
+    </p>
+  </div>
+  <div class="col-2 homepage_content">
+    <h2>Stuff I 've written</h2>
+    <hr>
+    <% @post.each do |post| %>
+      <h3><a href="#"><%= link_to post.title, post %> </a></h3>
+      <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+    <% end %>
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>Stuff I 've built</h2>
+    <hr>
+    <h3><a href="#">Unicasts</a></h3>
+    <p class="date">Friday April 10th</p>
+    <h3><a href="#">Loi Nguyen Community</a></h3>
+    <p class="date">Friday April 10th</p>
+    <h3><a href="#">My challange!</a></h3>
+    <p class="date">Friday April 10th</p>
+  </div>
+</div>
