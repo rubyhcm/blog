@@ -76,6 +76,8 @@ gem 'sassc'
 
 gem "font-awesome-sass", "~> 6.4.2"
 # https://fontawesome.com/docs/web/use-with/ruby-on-rails
+# @import "font-awesome"
+# https://fontawesome.com/search?q=youtube&o=r
 
 gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
 # Tích hợp normalize.css vào
