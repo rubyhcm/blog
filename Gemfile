@@ -81,3 +81,10 @@ gem "font-awesome-sass", "~> 6.4.2"
 
 gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
 # Tích hợp normalize.css vào
+
+gem 'pygments.rb'
+# highlight
+# add pygments.css.scss with code in https://gist.github.com/somebox/1082608
+
+gem 'redcarpet'
+# định dạng văn bản
