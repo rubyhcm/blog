@@ -89,3 +89,6 @@ gem 'pygments.rb'
 
 gem 'redcarpet'
 # định dạng văn bản
+
+gem 'whenever', require: false
+#chay crontab
