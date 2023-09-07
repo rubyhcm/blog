@@ -9,6 +9,7 @@
     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     */
+    // var disqus_shortname = 'blog' ==> use this to not display icon
     var disqus_indentifier = '<%= @post.id %>';
     var disqus_title = '<%= @post.title %>';
     var disqus_url = '<%= url_for([@post, {only_path: false}]) %>';
