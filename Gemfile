@@ -72,6 +72,7 @@ group :test do
 end
 
 gem 'sassc'
+# gem 'sass-rails'
 # Để load file .scss, chuyển application.css thành application.css.scss
 
 gem "font-awesome-sass", "~> 6.4.2"
