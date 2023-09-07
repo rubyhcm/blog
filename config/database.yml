@@ -11,7 +11,7 @@ test:
 
 production:
   <<: *default
-  database: blog
-  username: blog
+#  database: blog
+#  username: blog
   password: <%= ENV['RENDER_DEPLOY_DATABASE_PASSWORD'] %>
   url: <%= ENV['DATABASE_URL'] %>
