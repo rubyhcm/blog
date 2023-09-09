@@ -20,6 +20,6 @@
 # Learn more: http://github.com/javan/whenever
 
 # chạy crontab
-every 10.minute do
+every 15.minute do
   runner "bin/request_blog.rb"
 end
