@@ -92,3 +92,5 @@ gem 'redcarpet'
 
 gem 'whenever', require: false
 #chay crontab
+
+gem 'dotenv-rails'

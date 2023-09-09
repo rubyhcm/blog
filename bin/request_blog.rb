@@ -18,6 +18,6 @@ response = http.request(Net::HTTP::Get.new(url.path))
 
 # Mở hoặc tạo tệp tin /home/nguyenloi/Desktop/result.txt để ghi dữ liệu vào
 File.open('/home/nguyenloi/Desktop/result.txt', 'a') do |file|
-  file.puts("=====> Result from Blog app  <=====")
+  file.puts("=====> Result from Blog app!!!  <=====")
   file.puts("Response Code: #{response.code} #{Time.now}")
 end
