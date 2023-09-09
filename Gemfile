@@ -94,3 +94,6 @@ gem 'whenever', require: false
 #chay crontab
 
 gem 'dotenv-rails'
+
+gem 'friendly_id', '~> 5.4.0'
+#change url, ex: posts/5 ==> posts/how-to-use-rails
