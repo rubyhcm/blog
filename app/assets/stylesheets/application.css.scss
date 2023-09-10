@@ -140,6 +140,20 @@ input[type="submit"], .button {
   }
 }
 
+#content .button_wrapper a {
+  background: $highlight;
+  padding: 1em 2em;
+  color: $white;
+  text-decoration: none;
+}
+
+.button_wrapper {
+  margin: 4em 0 0 0;
+  text-align: center;
+}
+
+
+
 @import "welcome.css.scss";
 @import "posts_projects.css.scss";
 @import "pygments.css.scss";

@@ -8183,6 +8183,22 @@ input[type="submit"], .button {
     border: 2px solid #8bc6db;
     color: #8bc6db; }
 
+.project_button {
+  background: #8bc6db;
+  padding: 1em 2em;
+  color: #FFFFFF;
+  text-decoration: none; }
+
+#content .button_wrapper a {
+  background: #8bc6db;
+  padding: 1em 2em;
+  color: #FFFFFF;
+  text-decoration: none; }
+
+.button_wrapper {
+  margin: 4em 0 0 0;
+  text-align: center; }
+
 .col-1, .col-2, .col-3 {
   float: left; }
 
