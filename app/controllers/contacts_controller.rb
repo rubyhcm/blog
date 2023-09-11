@@ -10,8 +10,8 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     if @contact.save
-      @contact.deliver
-      # Mailjet::MailjetEmailService.new.call(@contact.email, @contact.name)
+      # @contact.deliver
+      Mailjet::MailjetEmailService.new.call(@contact.email, @contact.name)
       flash.now[:error] = nil
       flash[:success] = 'Message sent successfully.'
       redirect_to root_path
