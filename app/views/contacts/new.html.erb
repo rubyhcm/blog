@@ -1,0 +1,22 @@
+<h1 id="page_title">Say hello</h1>
+<div class="skinny_wrapper wrapper_padding">
+
+  <%= form_for @contact do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true %>
+
+    <%= f.label :email %>
+    <%= f.email_field :email, required: true %>
+
+    <%= f.label :message %>
+    <%= f.text_area :message, required: true %>
+
+    <div class="hidden">
+      <%= f.label :nickname %><br>
+      <%= f.text_field :nickname, hint: 'leave this field blank' %>
+    </div>
+
+    <%= f.submit 'Send Message', class: 'button' %>
+    <br>
+  <% end %>
+</div>

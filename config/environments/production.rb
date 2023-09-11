@@ -90,4 +90,13 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  routes.default_url_options = { protocol: 'https', host: 'blog-ag2f.onrender.com' }
+  # Do not dump schema after migrations.
+  config.action_mailer.default_url_options = { host: 'https://blog-ag2f.onrender.com' }
+  Mailjet.configure do |config|
+    config.api_key = ENV['MAILJET_API_KEY']
+    config.secret_key = ENV['MAILJET_SECRET_KEY']
+    config.api_version = "v3.1"
+  end
 end

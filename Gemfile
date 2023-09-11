@@ -100,3 +100,9 @@ gem 'friendly_id', '~> 5.4.0'
 
 gem 'will_paginate', '~> 4.0'
 #phan trang
+
+gem 'mail_form'
+gem 'httpclient'
+
+gem 'httparty'
+gem 'mailjet'
