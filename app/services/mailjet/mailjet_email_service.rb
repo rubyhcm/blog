@@ -3,7 +3,7 @@ class Mailjet::MailjetEmailService
     Mailjet::Send.create(messages: [{
                                       'From' => {
                                         'Email' => "namnguyen111k@gmail.com",
-                                        'Name' => "Hỗ trợ lập trình HCM"
+                                        'Name' => "Hỗ trợ lập trình HCM product"
                                       },
                                       'To' => [
                                         {
