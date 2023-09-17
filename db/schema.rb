@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_10_080912) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_17_042936) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "contacts", force: :cascade do |t|
+    t.string "title"
+    t.string "name"
+    t.string "nickname"
+    t.string "email"
+    t.string "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
@@ -43,5 +53,4 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_10_080912) do
     t.string "slug"
     t.index ["slug"], name: "index_projects_on_slug", unique: true
   end
-
 end

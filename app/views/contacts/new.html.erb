@@ -2,6 +2,9 @@
 <div class="skinny_wrapper wrapper_padding">
 
   <%= form_for @contact do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title%>
+
     <%= f.label :name %>
     <%= f.text_field :name, required: true %>
 

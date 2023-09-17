@@ -99,4 +99,5 @@ Rails.application.configure do
     config.secret_key = ENV['MAILJET_SECRET_KEY']
     config.api_version = "v3.1"
   end
+
 end
