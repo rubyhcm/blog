@@ -110,4 +110,4 @@ gem 'rails_12factor', group: :production
 # chay moi truong production o local
 # rails s -e production
 
-gem 'postmark-rails'
+gem 'devise'
