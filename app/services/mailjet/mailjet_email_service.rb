@@ -2,7 +2,6 @@ require 'mailjet'
 
 class Mailjet::MailjetEmailService
   def call(contact, subject = nil)
-    debugger
     Mailjet::Send.create(messages: [{
                                       'From' => {
                                         'Email' => ENV['DEFAULT_EMAIL'],
