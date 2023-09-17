@@ -8,8 +8,18 @@
   <div id="content">
     <%= markdown @post.content %>
     <%#= simple_format @post.content %>
-<!--    simple_format để định dạng-->
+    <!--    simple_format để định dạng-->
   </div>
+
+  <% if user_signed_in? && current_user.is_admin? %>
+    <div id='admin_links'>
+      <%= link_to 'Edit', edit_post_path %>
+      <%= link_to "Delete", post_path(@post), data: {
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure to delete this post?"
+      } %>
+    </div>
+  <% end %>
 
   <hr>
 
@@ -32,8 +42,3 @@
 
 <br>
 <br>
-<%= link_to 'Edit', edit_post_path %>
-<%= link_to "Delete", post_path(@post), data: {
-  turbo_method: :delete,
-  turbo_confirm: "Are you sure to delete this post?"
-} %>
