@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
 
     if @contact.save
       # @contact.deliver
-      Mailjet::MailjetEmailService.new.call(@contact.email, @contact.name)
+      Mailjet::MailjetEmailService.new.call(@contact)
       flash.now[:error] = nil
       flash[:success] = 'Message sent successfully.'
       redirect_to root_path
@@ -24,6 +24,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:name, :email, :message, :nickname)
+    params.require(:contact).permit(:name, :email, :message, :nickname, :title)
   end
 end
