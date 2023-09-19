@@ -11,7 +11,7 @@ jobs:
           BUNDLE_RETRY: 3
           BUNDLE_PATH: vendor/bundle
           PGHOST: 127.0.0.1
-          PGUSER: devfinding
+          PGUSER: blog
           RAILS_ENV: test
           REDIS_URL: redis://localhost:6379
           SECRET_KEY_BASE: 5efeab632787d3a103af67b84de765f26c627d408699aca21655fdf2db751a2c041842c9f35dc26de8e79d3bb92caecd39881c188e3d427a73e311bf187df863
