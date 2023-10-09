@@ -1,4 +1,4 @@
-# My blog
+## My blog
 
 Done with these techs:
 
