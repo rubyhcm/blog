@@ -112,7 +112,6 @@ gem 'rails_12factor', group: :production
 
 gem 'devise'
 
-
 gem "sentry-ruby"
 gem "sentry-rails"
 # add sentry
