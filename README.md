@@ -13,3 +13,4 @@ Done with these techs:
 * Auto deploy with Circleci
 
 ## Deploy to render: https://rails-blog.online/
+
