@@ -10,6 +10,7 @@
   <%= csp_meta_tag %>
 
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_include_tag 'send_mail_to_admin' %>
   <%= javascript_importmap_tags %>
 </head>
 
@@ -42,10 +43,10 @@
   <nav>
     <a href="https://github.com/rubyhcm" target=_blank><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
 <!--    target=_blank to open new page-->
-    <a href="https://github.com/rubyhcm"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-    <a href="https://github.com/rubyhcm"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-    <a href="https://github.com/rubyhcm"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-    <a href="mailto:loinguyen@rails-blog.online"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+    <a href="https://github.com/rubyhcm" target=_blank><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+    <a href="https://github.com/rubyhcm" target=_blank><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://github.com/rubyhcm" target=_blank><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+    <a href="#" onclick="openMailToLink(); return false;"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
   </nav>
 </footer>
 </body>
