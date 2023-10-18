@@ -1,4 +1,4 @@
-## My blog
+## My blog app with Rails
 
 Done with these techs:
 
@@ -12,5 +12,8 @@ Done with these techs:
 * Ruby 3
 * Auto deploy with Circleci
 
-## Deploy to render: https://rails-blog.online/
+You can view my deployment of this application [here](https://rails-blog.online/) (it may take sometime to load if the server is sleep, because it 's free) , or you can use the button below to deploy your own version.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+To view an implementation of this project, check out this [repo](https://github.com/rubyhcm/blog)
