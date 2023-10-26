@@ -24,7 +24,7 @@ class ProjectsController < ApplicationController
   end
 
   def update
-    if @project.update post_params
+    if @project.update project_params
       redirect_to @project, notice: "Your project has been updated!"
     else
       render 'edit'
