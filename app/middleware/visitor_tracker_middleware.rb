@@ -11,8 +11,6 @@ class VisitorTrackerMiddleware
   end
 end
 
-
-
 # # app/middleware/visitor_tracker_middleware.rb
 # class VisitorTrackerMiddleware
 #   def initialize(app)
