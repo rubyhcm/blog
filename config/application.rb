@@ -1,5 +1,5 @@
 require_relative "boot"
-
+require_relative '../app/middleware/visitor_tracker_middleware'
 require "rails/all"
 
 # Require the gems listed in Gemfile, including any gems
@@ -19,5 +19,6 @@ module BlogRails
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     # config.assets.enabled = true
+    config.middleware.use VisitorTrackerMiddleware
   end
 end
