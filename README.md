@@ -1,16 +1,16 @@
-## My blog app with Rails
+## My blog app with Rails MVC and API
 
 Done with these techs:
 
-* Mailjet
-* Sentry
-* Custom url with gem 'friendly_id'
-* Paginate
-* Crontab with gem 'whenever'
-* Postgres
-* Rails 7
-* Ruby 3
-* Auto deploy with Circleci
+- Mailjet
+- Sentry
+- Custom url with gem 'friendly_id'
+- Paginate
+- Crontab with gem 'whenever'
+- Postgres
+- Rails 7
+- Ruby 3
+- Auto deploy with Circleci
 
 You can view my deployment of this application [here](https://rails-blog.online/) (it may take sometime to load if the server is sleep, because it 's free) , or you can use the button below to deploy your own version.
 
