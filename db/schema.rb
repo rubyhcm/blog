@@ -75,4 +75,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_09_034031) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "visits", force: :cascade do |t|
+    t.string "ip_address"
+    t.string "user_agent"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
