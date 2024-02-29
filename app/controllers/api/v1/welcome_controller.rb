@@ -6,9 +6,9 @@ module Api
     # Controller for handling welcome
     class WelcomeController < ActionController::API
       def index
-        @posts = Post.all.limit(10).order('created_at desc')
-        @projects = Project.all.limit(10).order('created_at desc')
-        render json: { posts: @posts, projects: @projects }
+        posts = Post.all.limit(10).order('created_at desc')
+        projects = Project.all.limit(10).order('created_at desc')
+        render json: { posts: posts, projects: projects }
       end
     end
   end

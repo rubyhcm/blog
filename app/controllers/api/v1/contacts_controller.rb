@@ -9,10 +9,10 @@ module Api
       require 'httpclient'
 
       def create
-        @contact = Contact.new(contact_params)
+        contact = Contact.new(contact_params)
 
         begin
-          Mailjet::MailjetEmailService.new.call(@contact)
+          Mailjet::MailjetEmailService.new.call(contact)
           render json: { message: 'Message sent successfully' }, status: :created
         rescue StandardError => e
           render json: { error: e.message }, status: :unprocessable_entity
