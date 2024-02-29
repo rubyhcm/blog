@@ -8,13 +8,14 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root 'welcome#index'
 
-  # get '*path' => redirect('/')
+  get '*path' => redirect('/')
   # chuyển tất cả các url không tồn tại quay về root
   namespace :api do
     namespace :v1 do
       get 'welcome/index'
       resources :projects
-      resources :contacts, only: %i[new create]
+      resources :posts
+      resources :contacts, only: :create
     end
   end
 end

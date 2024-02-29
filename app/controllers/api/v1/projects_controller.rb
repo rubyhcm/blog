@@ -5,9 +5,9 @@ module Api
   module V1
     # Controller for handling projects
     class ProjectsController < ActionController::API
-      before_action :find_project, only: %i[show update destroy edit]
+      before_action :find_project, only: %i[show update destroy]
       before_action :authenticate_user!, except: %i[index show]
-      before_action :authorize_admin, only: %i[edit update destroy]
+      before_action :authorize_admin, only: %i[update destroy]
 
       def index
         projects = Project.all.order(created_at: :desc)
