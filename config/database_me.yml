@@ -6,18 +6,17 @@ default: &default
 development:
   <<: *default
   database: blog_development_2
-
 #development:
 #  <<: *default
 #  url: <%#= ENV['DATABASE_URL'] %>
 
-test:
-  <<: *default
-  database: blog_test_2
+# test:
+#   <<: *default
+#   database: blog_test_2
 
-production:
-  <<: *default
-  database: blog
-  username: blog
-  password: <%= ENV['RENDER_DEPLOY_DATABASE_PASSWORD'] %>
-  url: <%= ENV['DATABASE_URL'] %>
+# production:
+#   <<: *default
+#   database: blog
+#   username: blog
+#   password: <%= ENV['RENDER_DEPLOY_DATABASE_PASSWORD'] %>
+#   url: <%= ENV['DATABASE_URL'] %>
