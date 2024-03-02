@@ -17,3 +17,9 @@ You can view my deployment of this application [here](https://rails-blog.online/
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
 To view an implementation of this project, check out this [repo](https://github.com/rubyhcm/blog)
+
+### Run in production
+
+```
+rails assets:precompile RAILS_ENV=production
+```
