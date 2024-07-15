@@ -1,13 +1,15 @@
 # frozen_string_literal: true
 
+# done
+
 # Controller for handling API v1 projects
 module Api
   module V1
     # Controller for handling projects
     class ProjectsController < ActionController::API
       before_action :find_project, only: %i[show update destroy]
-      before_action :authenticate_user!, except: %i[index show]
-      before_action :authorize_admin, only: %i[update destroy]
+      # before_action :authenticate_user!, except: %i[index show]
+      # before_action :authorize_admin, only: %i[update destroy]
 
       def index
         projects = Project.all.order(created_at: :desc)
@@ -49,7 +51,7 @@ module Api
       end
 
       def project_params
-        params.require(:project).permit(:title, :description, :link, :slug)
+        params.require(:project).permit(:title, :description, :link)
       end
     end
   end

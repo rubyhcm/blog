@@ -1,16 +1,18 @@
 # frozen_string_literal: true
 
+# done
+
 # Controller for handling API v1 projects
 module Api
   module V1
-    # Controller for handling projects
-    class PostsController < ActionController::API
-      before_action :find_post, only: [:show, :update, :destroy]
-      before_action :authenticate_user!, except: [:index, :show]
-      before_action :authorize_admin, only: [:update, :destroy]
+    # Controller for handling API v1 posts
+    class PostsController < BaseController
+      before_action :find_post, only: %i[show update destroy]
+      # before_action :authenticate_user!, except: [:index, :show]
+      # before_action :authorize_admin, only: [:update, :destroy]
 
       def index
-        posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 5)
+        posts = Post.all.order('created_at desc')
         render json: posts
       end
 
@@ -43,12 +45,12 @@ module Api
       private
 
       def post_params
-        params.require(:post).permit(:title, :content, :slug)
+        params.require(:post).permit(:title, :content)
       end
 
       def find_post
-        @post = Post.friendly.find_by(slug: params[:id])
-        head :not_found unless @post
+        @post = Post.find_by(id: params[:id])
+        render json: { errors: 'Post not found' }, status: :not_found unless @post
       end
     end
   end
